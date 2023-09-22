@@ -14,6 +14,7 @@ class GradleSpringBootDemoApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// [1] 发布事件
 		testEventPublisher.publish("Hello, Spring!");
 	}
 }

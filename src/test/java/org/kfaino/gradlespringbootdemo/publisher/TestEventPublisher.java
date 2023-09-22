@@ -11,7 +11,7 @@ public class TestEventPublisher {
     private ApplicationEventPublisher applicationEventPublisher;
 
     public void publish(String message) {
-        // 使用publishEvent方法发布事件
+        // [2]使用publishEvent方法发布事件，事件源为TestEvent
         applicationEventPublisher.publishEvent(new TestEvent(this, message));
     }
 }
