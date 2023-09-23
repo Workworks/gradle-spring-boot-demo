@@ -1,6 +1,6 @@
-package org.kfaino.gradlespringbootdemo.publisher;
+package org.kfaino.gradlespringbootdemo.eventlistenerdemo.publisher;
 
-import org.kfaino.gradlespringbootdemo.event.TestEvent;
+import org.kfaino.gradlespringbootdemo.eventlistenerdemo.event.TestEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;

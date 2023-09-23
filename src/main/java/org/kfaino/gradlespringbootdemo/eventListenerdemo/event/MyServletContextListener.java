@@ -1,4 +1,4 @@
-package org.kfaino.gradlespringbootdemo.event;
+package org.kfaino.gradlespringbootdemo.eventListenerdemo.event;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;

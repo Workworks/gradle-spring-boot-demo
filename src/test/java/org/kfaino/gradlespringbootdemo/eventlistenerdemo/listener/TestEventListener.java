@@ -1,6 +1,6 @@
-package org.kfaino.gradlespringbootdemo.listener;
+package org.kfaino.gradlespringbootdemo.eventlistenerdemo.listener;
 
-import org.kfaino.gradlespringbootdemo.event.TestEvent;
+import org.kfaino.gradlespringbootdemo.eventlistenerdemo.event.TestEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 

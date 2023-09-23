@@ -1,4 +1,4 @@
-package org.kfaino.gradlespringbootdemo.event;
+package org.kfaino.gradlespringbootdemo.eventListenerdemo.event;
 
 import jakarta.servlet.ServletRequestEvent;
 import jakarta.servlet.ServletRequestListener;
@@ -12,7 +12,7 @@ public class MyServletRequestListener implements ServletRequestListener {
         HttpServletRequest request = (HttpServletRequest) servletRequestEvent.getServletRequest();
         System.out.println("session id为：" + request.getRequestedSessionId());
         System.out.println("request url为：" + request.getRequestURL());
-        request.setAttribute("name", "斌哥");
+        request.setAttribute("name", "苏文斌菜弟弟");
     }
 
     @Override

@@ -1,4 +1,4 @@
-package org.kfaino.gradlespringbootdemo.simple;
+package org.kfaino.gradlespringbootdemo.eventlistenerdemo.simple;
 
 public class UserRegisterLogListener {
     public void logUserRegister(UserRegisterEvent event) {

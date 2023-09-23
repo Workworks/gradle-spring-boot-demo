@@ -1,7 +1,7 @@
 package org.kfaino.gradlespringbootdemo;
 
 import org.junit.jupiter.api.Test;
-import org.kfaino.gradlespringbootdemo.publisher.TestEventPublisher;
+import org.kfaino.gradlespringbootdemo.eventlistenerdemo.publisher.TestEventPublisher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 

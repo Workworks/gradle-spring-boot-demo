@@ -1,4 +1,4 @@
-package org.kfaino.gradlespringbootdemo.simple;
+package org.kfaino.gradlespringbootdemo.eventlistenerdemo.simple;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.kfaino.gradlespringbootdemo.simple;
+package org.kfaino.gradlespringbootdemo.eventlistenerdemo.simple;
 
 public class WelcomeEmailListener {
     public void sendWelcomeEmail(UserRegisterEvent event) {

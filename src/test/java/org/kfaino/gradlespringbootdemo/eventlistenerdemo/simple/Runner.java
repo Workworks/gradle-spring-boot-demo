@@ -1,4 +1,4 @@
-package org.kfaino.gradlespringbootdemo.simple;
+package org.kfaino.gradlespringbootdemo.eventlistenerdemo.simple;
 
 public class Runner {
     public static void main(String[] args) {
