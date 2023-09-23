@@ -1,13 +1,10 @@
 package org.kfaino.gradlespringbootdemo.exceptiondemo.controller;
 
-import io.micrometer.common.util.StringUtils;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.MethodArgumentNotValidException;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.kfaino.gradlespringbootdemo.exceptiondemo.exception.User;
 
 
 @RestController
@@ -18,13 +15,21 @@ public class MyController {
         throw new Exception("统一异常捕获到的出错！");
     }
 
+//    @ExceptionHandler(Exception.class)
+//    public ResponseEntity<String> handleMyException(Exception e) {
+//        return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+//    }
+
     @GetMapping("/greet")
     public String greet(@RequestParam String name) {
         return "Hello, " + name + "!";
     }
 
-//    @ExceptionHandler(Exception.class)
-//    public ResponseEntity<String> handleMyException(Exception e) {
-//        return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
-//    }
+
+    @PostMapping("/user")
+    public ResponseEntity<String> createUser(@Valid @RequestBody User user) {
+        return new ResponseEntity<>("User created successfully!" + user.toString(), HttpStatus.CREATED);
+    }
+
+
 }
