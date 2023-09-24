@@ -1,6 +1,6 @@
 package org.kfaino.gradlespringbootdemo;
 
-import org.kfaino.gradlespringbootdemo.exceptiondemo.controller.MyController;
+import org.kfaino.gradlespringbootdemo.exception.controller.MyExceptionController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,7 +22,7 @@ class MyControllerTest {
 
     /**
      * 请求测试
-     * {@link MyController#greet}
+     * {@link MyExceptionController#greet}
      */
     @Test
     void requestTesting() throws Exception {
@@ -37,7 +37,7 @@ class MyControllerTest {
 
     /**
      * 参数校验
-     * {@link MyController#createUser}
+     * {@link MyExceptionController#createUser}
      */
     @Test
     void shouldReturnBadRequestWhenNameIsBlank() throws Exception {

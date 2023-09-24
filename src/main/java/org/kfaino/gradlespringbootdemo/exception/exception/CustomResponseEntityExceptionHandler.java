@@ -1,4 +1,4 @@
-package org.kfaino.gradlespringbootdemo.exceptiondemo.exception;
+package org.kfaino.gradlespringbootdemo.exception.exception;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package org.kfaino.gradlespringbootdemo.eventListenerdemo.event;
+package org.kfaino.gradlespringbootdemo.eventListener.event;
 
 import jakarta.servlet.ServletRequestEvent;
 import jakarta.servlet.ServletRequestListener;
@@ -10,15 +10,15 @@ public class MyServletRequestListener implements ServletRequestListener {
     @Override
     public void requestInitialized(ServletRequestEvent servletRequestEvent) {
         HttpServletRequest request = (HttpServletRequest) servletRequestEvent.getServletRequest();
-        System.out.println("session id为：" + request.getRequestedSessionId());
-        System.out.println("request url为：" + request.getRequestURL());
+//        System.out.println("session id为：" + request.getRequestedSessionId());
+//        System.out.println("request url为：" + request.getRequestURL());
         request.setAttribute("name", "苏文斌菜弟弟");
     }
 
     @Override
     public void requestDestroyed(ServletRequestEvent servletRequestEvent) {
-        System.out.println("request end");
+//        System.out.println("request end");
         HttpServletRequest request = (HttpServletRequest) servletRequestEvent.getServletRequest();
-        System.out.println("request域中保存的name值为：" + request.getAttribute("name"));
+//        System.out.println("request域中保存的name值为：" + request.getAttribute("name"));
     }
 }

@@ -1,4 +1,4 @@
-package org.kfaino.gradlespringbootdemo.eventListenerdemo.event;
+package org.kfaino.gradlespringbootdemo.eventListener.event;
 
 import jakarta.servlet.http.HttpSessionEvent;
 import jakarta.servlet.http.HttpSessionListener;

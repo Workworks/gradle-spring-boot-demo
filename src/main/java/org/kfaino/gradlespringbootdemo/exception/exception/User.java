@@ -1,4 +1,4 @@
-package org.kfaino.gradlespringbootdemo.exceptiondemo.exception;
+package org.kfaino.gradlespringbootdemo.exception.exception;
 
 import jakarta.validation.constraints.NotBlank;
 

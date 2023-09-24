@@ -1,14 +1,15 @@
-package org.kfaino.gradlespringbootdemo.exceptiondemo.controller;
+package org.kfaino.gradlespringbootdemo.exception.controller;
 
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.kfaino.gradlespringbootdemo.exceptiondemo.exception.User;
+import org.kfaino.gradlespringbootdemo.exception.exception.User;
 
 
 @RestController
-public class MyController {
+@RequestMapping("exception")
+public class MyExceptionController {
 
     @GetMapping("/endpoint")
     public String endPoint() throws Exception {
