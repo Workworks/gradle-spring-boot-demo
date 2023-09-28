@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    primary:
+      jdbc-url: jdbc:h2:file:./multi-datasource/data/testdb1
+      driver-class-name: org.h2.Driver
+      username: sa
+      password: password
+    secondary:
+      jdbc-url: jdbc:h2:file:./multi-datasource/data/testdb2
+      driver-class-name: org.h2.Driver
+      username: sa
+      password: password
+
+#    # 单数据源
+#    # http://localhost:8080/h2-console/
+#    # url: jdbc:h2:mem:testdb
+#    url: jdbc:h2:file:./multi-datasource/data/testdb1
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password: password
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
