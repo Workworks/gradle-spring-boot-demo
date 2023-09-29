@@ -18,7 +18,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     runtimeOnly 'com.h2database:h2' // 使用 H2 数据库作为示例，如果你使用 MySQL，你应该替换这个依赖。
-
+    implementation 'io.seata:seata-spring-boot-starter:1.7.1' // 请检查最新的版本号
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'

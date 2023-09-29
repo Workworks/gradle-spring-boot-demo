@@ -46,4 +46,9 @@ public class UserController {
     public User createMix(@Valid @RequestBody UserOrderDTO userOrderDTO) {
         return userOrderService.createUserAndOrder(userOrderDTO);
     }
+
+    @PostMapping("/createMixGlobalTransaction")
+    public void createMixByGlobalTransaction(@Valid @RequestBody UserOrderDTO userOrderDTO) {
+        userOrderService.createUserAndOrderByGlobalTransaction(userOrderDTO);
+    }
 }

@@ -1,1 +1,3 @@
 rootProject.name = 'gradle-spring-boot-demo'
+include 'core'
+include 'multi-datasource'
