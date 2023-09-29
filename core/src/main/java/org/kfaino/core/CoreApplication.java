@@ -39,7 +39,7 @@ public class CoreApplication {
 
 
 	// 定义多个事务管理器
-	@Bean(name = "transactionManagerOne")
+	@Bean(name = "transactionManager")
 	public PlatformTransactionManager transactionManagerOne(DataSource dataSourceOne) {
 		return new DataSourceTransactionManager(dataSourceOne);
 	}

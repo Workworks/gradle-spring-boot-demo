@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Primary;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"org.kfaino.datasource.config"})
+@ComponentScan(basePackages = {"org.kfaino"})
 public class MultiDatasourceApplication {
 
     public static void main(String[] args) {

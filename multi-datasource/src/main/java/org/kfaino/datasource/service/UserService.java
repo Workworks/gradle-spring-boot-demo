@@ -1,38 +1,25 @@
 package org.kfaino.datasource.service;
 
+import jakarta.annotation.Resource;
 import org.kfaino.datasource.annotation.DataSource;
+import org.kfaino.datasource.dto.UserDTO;
 import org.kfaino.datasource.entity.primary.User;
-import org.kfaino.datasource.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.kfaino.datasource.repository.primary.UserRepository;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class UserService {
 
-    @Autowired
+    @Resource
     private UserRepository userRepository;
 
-    @DataSource("primary")
-    public User createUserInPrimary(String name, String email) {
+    @DataSource()
+    @Transactional("transactionManager")
+    public User createUser(UserDTO userDTO) {
         User user = new User();
-        user.setName(name);
-        user.setEmail(email);
+        BeanUtils.copyProperties(userDTO,user);
         return userRepository.save(user);
-    }
-
-    @DataSource("secondary")
-    public User createUserInSecondary(String name, String email) {
-        User user = new User();
-        user.setName(name);
-        user.setEmail(email);
-        return userRepository.save(user);
-    }
-
-
-
-    public List<User> getAllUsers() {
-        return userRepository.findAll();
     }
 }

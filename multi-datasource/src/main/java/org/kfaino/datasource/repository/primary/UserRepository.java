@@ -1,4 +1,4 @@
-package org.kfaino.datasource.repository;
+package org.kfaino.datasource.repository.primary;
 
 import org.kfaino.datasource.entity.primary.User;
 import org.springframework.data.jpa.repository.JpaRepository;

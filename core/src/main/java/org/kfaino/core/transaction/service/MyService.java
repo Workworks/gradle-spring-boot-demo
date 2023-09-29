@@ -62,7 +62,7 @@ public class MyService {
 
 
 
-    @Transactional(transactionManager = "transactionManagerOne",propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT, timeout = 30)
+    @Transactional(transactionManager = "transactionManager",propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT, timeout = 30)
     public void createEntity(MyEntity myEntity) {
         myRepository.save(myEntity);
     }
