@@ -36,6 +36,7 @@
 3. [Spring | 事件监听器应用与最佳实践](https://blog.csdn.net/yehenaladonggui/article/details/133151675)
 4. [Spring | 如何在项目中优雅的处理异常 - 全局异常处理以及自定义异常处理](https://blog.csdn.net/yehenaladonggui/article/details/133153600)
 5. [Spring | 事务原理与实践 - 声明式事务及编程式事务](https://blog.csdn.net/yehenaladonggui/article/details/133207569)
+6. [Spring | 基于SpringBoot的多数据源实战 - 使用seata实现多数据源的全局事务管理](https://blog.csdn.net/yehenaladonggui/article/details/133243328)
 
 ## 如何贡献
 我们欢迎任何人对于本项目做出贡献。你可以通过以下方式参与进来：
